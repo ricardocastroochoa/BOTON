@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .buttons-container{
+    background-color: #666;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    min-height: 100dvh;
+    padding: 20px;
+  }
+    .button-1{
+        padding: 10px 20px;
+        background-color: #fa49d9;
+        color: rgb(251, 8, 8);
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: col-resize;     
+      }
+      .button-2{
+        padding: 10px 20px;
+        background-color: #03a9f4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: help;
+      }
+      .button-3{
+        padding: 10px 20px;
+        background-color: #e1f439;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: e-resize;
+      }
+      .button-4{
+        padding: 10px 20px;
+        background-color: #69f0ae ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: sw-resize;
+      }
+      .button-5{
+        padding: 10px 20px;
+        background-color: #350496 ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: se-resize;
+      }
+      .button-6{
+        padding: 10px 20px;
+        background-color: #aab22f  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: all-scroll;
+      }
+
+      .button-7{
+        padding: 10px 20px;
+        background-color: #17c2f6  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: progress;
+      }
+    
+      .button-8{
+        padding: 10px 20px;
+        background-color: #8771f7  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .button-9{
+        padding: 10px 20px;
+        background-color: #760664  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: move;
+      }
+    
+      .button-10{
+        padding: 10px 20px;
+        background-color: #1fe636  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    
+      .button-11{
+        padding: 10px 20px;
+        background-color: #6b1dfa  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: move;
+      }
+    
+      .button-12{
+        padding: 10px 20px;
+        background-color: #f56252  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: copy;
+      }
+    
+      .button-13{
+        padding: 10px 20px;
+        background-color: #b1cd12;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: vertical-text;
+      }
+    
+      .button-14{
+        padding: 10px 20px;
+        background-color: #fe0894  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: progress; 
+      }
+    
+      .button-15{
+        padding: 10px 20px;
+        background-color: #98fc73  ;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: alias;
+      }
+
+.buttons-container{
+
+}
+.button-1:hover {
+  transform: skewX(50deg);
+}
+.button-2:hover {
+  transform: skewY(60deg);
+}
+.button-3:hover {
+ background-color: #1fe636;
+}
+.button-4:hover {
+ transform: rotateY( 60deg);
+}
+.button-5:hover {
+  color:#ffff00;
+}
+.button-6:hover {
+  opacity: 0.5;
+}
+.button-7:hover {
+  box-shadow: 2px 2px 5px #666;
+}
+.button-8:hover {
+  transform: skew(40deg);
+}
+.button-9:hover {
+  transform: scale(2,2);
+}
+.button-10:hover {
+  text-decoration: underline overline dotted red; background-color:#17c2f6;
+}
+.button-11:hover {
+  transform: rotateY(50deg);
+  
+}
+.button-12:hover {
+  transform: rotate(180deg);
+}
+.button-13:hover {
+  transform: scale(5,5);
+}
+.button-14:hover {
+  box-shadow:  2px 2px 5px rgb(226, 168, 127);
+}
+.button-15:hover {
+  position: relative;
+  top: 4;
+  transition: top 0,3s ease;
+}
+  .button-15 {
+    top: 4px;
+  }
+    </style>
+</head>     
+<body>
+  <center>
+    <div class="buttons-container">
+  <button class="button-1">Danger1</button>
+  <button class="button-2">Danger2</button>
+  <button class="button-3">Danger3</button>
+  <button class="button-4">Danger4</button>
+  <button class="button-5">Danger5</button>
+  <button class="button-6">Danger6</button>
+  <button class="button-7">Danger7</button>
+  <button class="button-8">Danger8</button>
+  <button class="button-9">Danger9</button>
+  <button class="button-10">Danger10</button>
+  <button class="button-11">Danger11</button>
+  <button class="button-12">Danger12</button>
+  <button class="button-13">Danger13</button>
+  <button class="button-14">Danger14</button>
+  <button class="button-15">Danger15</button>
+</div>
+</center>
+    
+</body>
+
+</html>
+<body>
+<button style=""></button>
+</body>
+</html>
